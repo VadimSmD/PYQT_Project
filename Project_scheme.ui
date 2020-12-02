@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1129</width>
+    <height>890</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройки показа картинки</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_last_directory">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>630</y>
+      <width>271</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить картинку в эту директорию</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FaceScan">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Запустить поиск лиц</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="importPic">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>600</y>
+      <width>271</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Загрузить картинку</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picture">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>671</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="censore_check">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>630</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="secondary_check">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>660</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change_censore">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Функция цензуры</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change_features">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>660</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Функция показа черт лица</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="errors">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="red_button">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Только красный цвет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="green_button">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Только зелёный цвет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="blue_button">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>40</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Только синий цвет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="all_button">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>40</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Все цвета</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="turn_left">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="turn_right">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>--&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="blur_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Функция блюра</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blur">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>690</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_new_dir">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>660</y>
+      <width>271</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить в новую директорию</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mid_color">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Определить средний цвет основного иозбражения</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="color">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>70</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="PlotWidget" name="graph">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>200</y>
+      <width>421</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="graph_make">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>170</y>
+      <width>251</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Построить график распределения пикселей</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="amount_of_brightness">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>560</y>
+      <width>471</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>300</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="tracking">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_brightness">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>590</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройка яркости</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_color_balance">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>660</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройка цветового баланса</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_difference">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>730</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройка контраста</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_sharpness">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>810</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройка резкости</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="amount_of_color_balance">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>630</y>
+      <width>471</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>300</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="amount_of_difference">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>700</y>
+      <width>471</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>300</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="amount_of_sharpness">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>770</y>
+      <width>471</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>300</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brightness">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>590</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Текущее значение: 1.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="colors">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>660</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Текущее значение: 1.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="contrast">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>730</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Текущее значение: 1.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sharpness">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>810</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Текущее значение: 1.0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_brightness">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>590</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить изменения</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_color">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>660</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить изменения</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_contrast">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>730</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить изменения</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_sharpness">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>810</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить изменения</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1129</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
